@@ -17,18 +17,18 @@ async function fetchJoke() {
     jokeText.innerHTML = jokeObj.joke;
 }
 
-function sendEmail() {
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "lauren.prueter@gmail.com",
-        Password: "password",
-        To: 'lauren.prueter@gmail.com',
-        From: document.getElementById("email").value,
-        Subject: "New message from website",
-        Body: "Name: " + document.getElementById("name").value
-        + "<br> Email: " + document.getElementById("email").value
-        + "<br> Message: " + document.getElementById("message").value
-    }).then(
-        message => alert("Message sent. Thank you.")
-    );
-}
+// function sendEmail() {
+//     Email.send({
+//         Host: "smtp.gmail.com",
+//         Username: "lauren.prueter@gmail.com",
+//         Password: "password",
+//         To: 'lauren.prueter@gmail.com',
+//         From: document.getElementById("email").value,
+//         Subject: "New message from website",
+//         Body: "Name: " + document.getElementById("name").value
+//         + "<br> Email: " + document.getElementById("email").value
+//         + "<br> Message: " + document.getElementById("message").value
+//     }).then(
+//         message => alert("Message sent. Thank you.")
+//     );
+// }
