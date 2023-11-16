@@ -97,7 +97,7 @@
             </div>
             <div class="col-1 flex-end">
                 <h3 id="contact" class="white">Contact me</h3>
-                <form>
+                <form onsubmit="sendEmail(); reset(); return false;">
                     <div class="flex col-1 gap-large">
                         <div>
                             <label for="fname" class="white">Name</label>
@@ -105,7 +105,7 @@
                         </div>
                         <div>
                             <label for="email" class="white">Email</label>
-                            <input type="text" id="email" name="email" placeholder="Insert your email">
+                            <input type="email" id="email" name="email" placeholder="Insert your email">
                         </div>
                     </div>
                     <label for="subject" class="white">Message</label>
@@ -117,6 +117,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
