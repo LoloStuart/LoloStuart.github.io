@@ -28,6 +28,11 @@ h2 {
     display: flex;
 }
 
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
 .flex-end {
     justify-content: flex-end;
 }
@@ -58,6 +63,10 @@ h2 {
 
 .col-3 {
     flex: 3;
+}
+
+.gap-xlarge {
+    gap: 100px;
 }
 
 .gap-large {
