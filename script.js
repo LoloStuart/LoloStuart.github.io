@@ -16,3 +16,9 @@ async function fetchJoke() {
 const jokeObj = await jokeData.json();
 jokeText.innerHTML = jokeObj.joke;
 }
+
+// function hover() {
+//     let btn= document.querySelector('.projects-btn')
+//     btn.classList.add ('hover')
+//     console.log(hover);
+// }
