@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauren Stuart | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <nav class="nav">
+        <h1 class="nav-title"><a href="index.html">Lauren Stuart</a></h1>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!--Hero section-->
+    <div class="hero flex align-items justify-content-center">
+        <h1>I’m Lauren, a fledgling web developer interested in finding solutions to folk’s web problems.
+    </div>
+    </div>
+
+    <!-- About me-->
+    <main class="container">
+        <div class="flex space-between gap-large">
+            <div class="col-2">
+                <h2>About me</h2>
+                <p>I’m a full-stack student at Coding Dojo learning the ins and outs of web development. Before joining
+                    the Dojo, I was a medical technologist for four years, where I performed tests in hematology, blood
+                    bank, microbiology, and other departments. Before I got my hands dirty in the lab, I was a graphic
+                    designer for six years. After a lot of soul-searching, I decided that I want to be a developer and
+                    work with
+                    others to make lovely web products.</p>
+                <p>If I’m not at my computer, and the Michigan weather permits, I like to spend time outside.</p>
+            </div>
+            <div class="col-1 flex-wrap">
+                <h2>What I'm learning</h2>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Git/Github</li>
+                    <li>Accessibility</li>
+                    <li>jQuery</li>
+                    <li>Python</li>
+                    <li>mySQL</li>
+                    <li>Flask</li>
+                    <li>MVC</li>
+                    <li>Node.js</li>
+                    <li>Express.JS</li>
+                    <li>MongoDB</li>
+                    <li>C#</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Projects-->
+    <div class="project-bg">
+        <section class="project-section">
+            <h2>Projects</h2>
+            <div class="flex">
+                <div class="col-1">
+                    <a href="joke.html"><img src="assets/images/computer-thumb.jpg" alt="computer graphic"></a>
+                </div>
+                <div class="col-1">
+                    <h3>Joke Generator</h3>
+                    <p>A simple project, using an API I made a computer that tells dad jokes!</p>
+                    <a href="joke.html" class="projects-btn">See the project</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer-->
+
+    <footer class="end-container">
+        <div class="flex">
+            <div class="col-1">
+                <h3>Social</h3>
+                <ul class="white">
+                    <li><a href="https://www.linkedin.com/in/laurenstuart89/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/LoloStuart" target="_blank">Github</a></li>
+                    <li><a href="https://www.instagram.com/laurenstuart89/" target="_blank">Instagram</li></a>
+                </ul>
+            </div>
+            <div class="col-1 flex-end">
+                <h3 id="contact">Contact me</h3>
+                <form>
+                    <div class="flex col-1 gap-large">
+                        <div>
+                            <label for="fname">Name</label>
+                            <input type="text" id="fname" name="name" placeholder="Insert your name">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Insert your email">
+                        </div>
+                    </div>
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write your message"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

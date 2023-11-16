@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <nav class="nav">
+        <h1 class="nav-title"><a href="index.html">Lauren Stuart</a></h1>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!--Main content-->
+
+    <div class="joke-container">
+        <div class="row">
+            <div class="computer">
+                <img src="assets\images\computer.png" alt="computer from the 90s">
+                <div class="eyes">
+                    <div class="left-eye"></div>
+                    <div class="right-eye"></div>
+                </div>
+            </div>
+            <div class="jokeBox">
+                <p>Hello, I'm the <b>Spirited Humor and Wit Nexus</b>, but you can call me S.H.A.W.N. Click or tap the
+                    button for a joke!</p>
+                <button class="jokebtn" onclick="fetchJoke()">Tell a joke</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-container">
+        <h2>About this project</h2>
+        <p>The assignment was to use an API for anything we wanted. I chose a "dad joke" API and created a simple
+            computer graphic to act as the speaker of the jokes. To get a little experience with CSS animations, I
+            learned how to make the eyes blink by manipulating a couple green squares.</p>
+        <p>Why is the conputer named SHAWN? It's a reference to one of my bootcamp instructors, who likes to tell dad
+            jokes.</p>
+        <h3>Tools used</h3>
+        <ul class="flex gap-small pills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Photoshop</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="end-container">
+        <div class="flex">
+            <div class="col-1">
+                <h3>Social</h3>
+                <ul class="white">
+                    <li><a href="https://www.linkedin.com/in/laurenstuart89/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/LoloStuart" target="_blank">Github</a></li>
+                    <li><a href="https://www.instagram.com/laurenstuart89/" target="_blank">Instagram</li></a>
+                </ul>
+            </div>
+            <div class="col-1 flex-end">
+                <h3 id="contact">Contact me</h3>
+                <form>
+                    <div class="flex col-1 gap-large">
+                        <div>
+                            <label for="fname">Name</label>
+                            <input type="text" id="fname" name="name" placeholder="Insert your name">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Insert your email">
+                        </div>
+                    </div>
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write your message"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
