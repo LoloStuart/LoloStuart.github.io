@@ -14,9 +14,14 @@
 <body>
 
     <!--Navigation-->
-    <nav class="nav">
-        <h1 class="nav-title"><a href="index.html">Lauren Stuart</a></h1>
-        <ul class="nav-links">
+    <nav class="nav flex align-items space-between">
+        <div class="flex">
+            <a href="index.html"><img src="assets/images/lauren-small.jpg" alt="cartoon graphic of Lauren Stuart"></a>
+            <h1 class="nav-title">
+                <a href="index.html">Lauren Stuart</a>
+            </h1>
+        </div>
+        <ul class="nav-links flex align-items flex-end">
             <li><a href="index.html">HOME</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
@@ -47,15 +52,15 @@
                     <li>HTML/CSS</li>
                     <li>Javascript</li>
                     <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express.JS</li>
                     <li>Git/Github</li>
                     <li>Accessibility</li>
                     <li>jQuery</li>
                     <li>Python</li>
-                    <li>mySQL</li>
                     <li>Flask</li>
+                    <li>mySQL</li>
                     <li>MVC</li>
-                    <li>Node.js</li>
-                    <li>Express.JS</li>
                     <li>MongoDB</li>
                     <li>C#</li>
                 </ul>
@@ -83,17 +88,19 @@
         </section>
     </div>
 
-    <!-- Footer-->
-
+    <!-- Footer -->
     <footer class="end-container">
         <div class="flex">
             <div class="col-1">
                 <h3 class="white">Social</h3>
-                <ul class="white">
-                    <li><a href="https://www.linkedin.com/in/laurenstuart89/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/LoloStuart" target="_blank">Github</a></li>
-                    <li><a href="https://www.instagram.com/laurenstuart89/" target="_blank">Instagram</li></a>
-                </ul>
+                <div class="white flex gap-small">
+                    <a href="https://www.linkedin.com/in/laurenstuart89/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in fa-xl" style="color: #ffffff;"></i></a>
+                    <a href="https://github.com/LoloStuart" target="_blank"><i class="fa-brands fa-github fa-xl"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/laurenstuart89/" target="_blank"><i
+                            class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+                </div>
             </div>
             <div class="col-1 flex-end">
                 <h3 id="contact" class="white">Contact me (not functional yet!)</h3>
@@ -117,7 +124,9 @@
         </div>
     </footer>
 
+
     <script src="script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://kit.fontawesome.com/701e170e9f.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

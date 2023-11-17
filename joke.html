@@ -14,9 +14,14 @@
 <body>
 
     <!--Navigation-->
-    <nav class="nav">
-        <h1 class="nav-title"><a href="index.html">Lauren Stuart</a></h1>
-        <ul class="nav-links">
+    <nav class="nav flex align-items space-between">
+        <div class="flex">
+            <a href="index.html"><img src="assets/images/lauren-small.jpg" alt="cartoon graphic of Lauren Stuart"></a>
+            <h1 class="nav-title">
+                <a href="index.html">Lauren Stuart</a>
+            </h1>
+        </div>
+        <ul class="nav-links flex align-items flex-end">
             <li><a href="index.html">HOME</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
@@ -32,6 +37,9 @@
                     <div class="left-eye"></div>
                     <div class="right-eye"></div>
                 </div>
+                <div class="mouth">
+                    <img src="assets\images\mouth.png">
+                </div>
             </div>
             <div class="jokeBox">
                 <p>Hello, I'm the <b>Spirited Humor and Wit Nexus</b>, but you can call me S.H.A.W.N. Click or tap the
@@ -45,7 +53,7 @@
         <h2>About this project</h2>
         <p>The assignment was to use an API for anything we wanted. I chose a "dad joke" API and created a simple
             computer graphic to act as the speaker of the jokes. To get a little experience with CSS animations, I
-            learned how to make the eyes blink by manipulating a couple green squares.</p>
+            learned how to make the eyes blink by transforming a couple green squares.</p>
         <p>Why is the conputer named SHAWN? It's a reference to one of my bootcamp instructors, who likes to tell dad
             jokes.</p>
         <h3>Tools used</h3>
@@ -54,7 +62,6 @@
             <li>CSS</li>
             <li>Javascript</li>
             <li>Adobe Illustrator</li>
-            <li>Adobe Photoshop</li>
         </ul>
     </div>
 
@@ -63,14 +70,15 @@
         <div class="flex">
             <div class="col-1">
                 <h3 class="white">Social</h3>
-                <ul class="white">
-                    <li><a href="https://www.linkedin.com/in/laurenstuart89/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/LoloStuart" target="_blank">Github</a></li>
-                    <li><a href="https://www.instagram.com/laurenstuart89/" target="_blank">Instagram</li></a>
-                </ul>
+                <div class="white flex gap-small">
+                    <a href="https://www.linkedin.com/in/laurenstuart89/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl" style="color: #ffffff;"></i></a>
+                    <a href="https://github.com/LoloStuart" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/laurenstuart89/" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+                </div>
             </div>
             <div class="col-1 flex-end">
-                <h3 id="contact" class="white">Contact me</h3>
+                <h3 id="contact" class="white">Contact me (not functional yet!)</h3>
+                <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
                 <form>
                     <div class="flex col-1 gap-large">
                         <div>
@@ -79,7 +87,7 @@
                         </div>
                         <div>
                             <label for="email" class="white">Email</label>
-                            <input type="text" id="email" name="email" placeholder="Insert your email">
+                            <input type="email" id="email" name="email" placeholder="Insert your email">
                         </div>
                     </div>
                     <label for="subject" class="white">Message</label>
@@ -92,6 +100,7 @@
 
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/701e170e9f.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
